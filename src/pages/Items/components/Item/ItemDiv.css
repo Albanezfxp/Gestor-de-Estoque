@@ -1,0 +1,98 @@
+#section {
+  margin: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#idContainer {
+  width: 25%;
+  padding-left: 8rem;
+}
+
+#containerEspecific {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 30px;
+}
+
+.item > div > p {
+  font-size: 0.9rem;
+}
+
+.buttonsAcctions > ul {
+  margin-right: 60px;
+  padding-right: 20px;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.buttonsAcctions > ul > li {
+  display: inline-block;
+}
+
+.buttonsAcctions > ul > li > button {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+#refreshItem {
+  background-color: #f8f9fa;
+  color: black;
+}
+
+#refreshItem:hover {
+  background-color: #e2e6ea;
+}
+
+#excluirButton {
+  background-color: #dc3545;
+  color: white;
+}
+
+#excluirButton:hover {
+  background-color: #c82333;
+}
+
+.itemTitle {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.categoryContainer {
+  flex: 0 1 40%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.quantityContainer {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}

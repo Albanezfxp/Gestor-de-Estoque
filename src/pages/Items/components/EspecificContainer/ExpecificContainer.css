@@ -1,0 +1,49 @@
+#navButtonContainer {
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(222, 222, 222);
+}
+#titleItem {
+  margin-left: 20px;
+  font-weight: lighter;
+  font-size: 40px;
+}
+#buttonItemsContainer {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 35px 0px 0px 20px;
+}
+
+.buttonAcctionItem {
+  display: inline-block;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#btn1 {
+  padding-bottom: 15px;
+}
+
+#especificContainer > ul > div {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 40px;
+  width: 65%;
+}
+
+#especificContainer > ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 25px;
+  background-color: #222222;
+  border-radius: 5px;
+}
+
+.action {
+  position: relative;
+  left: 40px;
+}

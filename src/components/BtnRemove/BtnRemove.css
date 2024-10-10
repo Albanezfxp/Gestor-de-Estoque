@@ -1,0 +1,14 @@
+#excluirButton {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+  background-color: #dc3545;
+  color: white;
+}
+
+#excluirButton:hover {
+  background-color: #c82333;
+}

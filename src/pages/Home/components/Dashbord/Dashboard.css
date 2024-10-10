@@ -1,0 +1,16 @@
+.dashboardItem {
+  background-color: #222;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboardTitleContainer h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.dashboardNumberContainer p {
+  font-size: 36px;
+  font-weight: bold;
+}

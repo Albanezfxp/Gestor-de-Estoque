@@ -1,0 +1,22 @@
+.buttonAcion {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  margin-left: 15px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnSee {
+  text-decoration: none;
+  color: #000;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+.buttonAcion:hover {
+  background-color: #c9c6c6;
+}

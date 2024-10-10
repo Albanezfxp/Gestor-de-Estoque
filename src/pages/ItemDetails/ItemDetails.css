@@ -1,0 +1,69 @@
+.itemDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.buttons {
+  margin-bottom: 10px;
+}
+
+.btn-update,
+.btn-delete {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+}
+
+.btn-delete:hover {
+  background-color: #902631;
+}
+.info {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 30px;
+}
+
+.infoItemContaier {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+
+.infoItem {
+  border: 1px solid transparent;
+  border-radius: 15px;
+  background-color: #565656;
+  padding: 20px;
+  text-align: center;
+}
+
+#descriptionItem {
+  font-size: 25px;
+}
+
+#divDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#titleContainer {
+  display: flex;
+  gap: 20px;
+}
+#titleContainer > h3 {
+  margin-top: 5px;
+}
+#titleContainer > p {
+  font-size: 25px;
+}

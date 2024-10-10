@@ -1,0 +1,23 @@
+.itemOverContainer {
+  display: flex;
+  /* Alinha verticalmente */
+  justify-content: space-between; /* Distribui espaço entre o nome e a quantidade */
+  width: 55%; /* Garante que ocupe toda a largura do contêiner pai */
+}
+
+.nameOver {
+  position: relative;
+  right: 20px;
+  flex: 1; /* Permite que o nome ocupe o espaço restante */
+  overflow: hidden; /* Oculta texto que ultrapassa o contêiner */
+  text-overflow: ellipsis; /* Exibe '...' para texto longo */
+  white-space: nowrap; /* Impede quebra de linha */
+}
+
+.quantityContainer {
+  display: flex; /* Ativa o Flexbox */
+  align-items: center; /* Centraliza verticalmente */
+  margin-left: 20px; /* Espaço entre o nome e a quantidade */
+  position: relative;
+  left: 20px;
+}
