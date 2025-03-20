@@ -1,69 +1,126 @@
+@import '../../styles/global.css';
+
 .itemDetailsContainer {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .buttons {
-  margin-bottom: 10px;
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
 }
 
 .btn-update,
 .btn-delete {
-  background-color: #007bff;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--text-color);
   border: none;
-  padding: 10px 15px;
-  margin-right: 10px;
-  border-radius: 5px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--border-radius);
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .btn-delete {
-  background-color: #dc3545;
+  background-color: var(--danger-color);
 }
 
 .btn-delete:hover {
-  background-color: #902631;
+  background-color: var(--danger-hover);
 }
+
 .info {
-  display: flex;
-  margin-bottom: 10px;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
 }
 
 .infoItemContaier {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: var(--spacing-md);
   text-align: center;
 }
 
 .infoItem {
   border: 1px solid transparent;
-  border-radius: 15px;
-  background-color: #565656;
-  padding: 20px;
+  border-radius: var(--border-radius);
+  background-color: var(--secondary-bg);
+  padding: var(--spacing-md);
   text-align: center;
 }
 
 #descriptionItem {
-  font-size: 25px;
+  font-size: 1.5rem;
+  margin-bottom: var(--spacing-sm);
 }
 
 #divDescription {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: var(--spacing-sm);
+  background-color: var(--secondary-bg);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius);
 }
 
 #titleContainer {
   display: flex;
-  gap: 20px;
+  gap: var(--spacing-md);
+  align-items: center;
+  flex-wrap: wrap;
 }
+
 #titleContainer > h3 {
-  margin-top: 5px;
+  font-size: 1.5rem;
 }
+
 #titleContainer > p {
-  font-size: 25px;
+  font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .itemDetailsContainer {
+    gap: var(--spacing-md);
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  #titleContainer {
+    justify-content: center;
+    text-align: center;
+  }
+
+  #descriptionItem {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons {
+    flex-direction: column;
+  }
+
+  .btn-update,
+  .btn-delete {
+    width: 100%;
+  }
+
+  #titleContainer {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+
+  #titleContainer > h3,
+  #titleContainer > p {
+    font-size: 1.25rem;
+  }
 }

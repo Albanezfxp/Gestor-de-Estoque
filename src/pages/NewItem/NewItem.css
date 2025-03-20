@@ -1,3 +1,85 @@
+@import '../../styles/global.css';
+
+.newItemContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+.newItemForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  background-color: var(--secondary-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.formGroup label {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  padding: var(--spacing-sm);
+  border: 1px solid var(--secondary-bg);
+  border-radius: var(--border-radius);
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.formGroup textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.submitButton {
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .newItemContainer {
+    padding: var(--spacing-sm);
+  }
+
+  .newItemForm {
+    padding: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .formGroup input,
+  .formGroup textarea,
+  .formGroup select {
+    font-size: 16px; /* Previne zoom em dispositivos iOS */
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}
+
 /* Estilos gerais */
 
 #mainContainer {

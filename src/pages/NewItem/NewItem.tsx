@@ -27,69 +27,66 @@ export default function NewItem() {
   };
 
   return (
-    <>
-      <main>
-        <div id="mainContainer">
-          <form onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="name">Nome:</label>
-              <input
-                type="text"
-                id="name"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="quantity">Quantidade:</label>
-              <input
-                type="number"
-                id="quantity"
-                value={quantity}
-                onChange={(e) => setQuantity(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="price">Preço:</label>
-              <input
-                type="number"
-                id="price"
-                value={price}
-                onChange={(e) => setPrice(e.target.value)}
-              />
-            </div>
-            <div>
-              <label htmlFor="category">Categoria:</label>
-              <select
-                id="category"
-                name="category"
-                value={category}
-                onChange={(e) => setCategory(e.target.value)}
-              >
-                <option value="">Selecione a categoria</option>
-                <option value="Jogos">Jogos</option>
-                <option value="Livros">Livros</option>
-                <option value="Figure">Art-Figure</option>
-                <option value="Acessorios">Acessorios</option>
-                <option value="Eleronicos">Eleronicos</option>
-                <option value="Domesticos">Domesticos</option>
-                <option value="Esportes">Esportes</option>
-                <option value="Visual">Visual</option>
-              </select>
-            </div>
-            <div>
-              <label htmlFor="description">Descrição:</label>
-              <textarea
-                name="description"
-                id="description"
-                value={description}
-                onChange={(e) => setDescription(e.target.value)}
-              ></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
+    <div className="newItemContainer">
+      <form className="newItemForm" onSubmit={handleSubmit}>
+        <div className="formGroup">
+          <label htmlFor="name">Nome do Item:</label>
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={(ev) => setName(ev.target.value)}
+            required
+          />
         </div>
-      </main>
-    </>
+
+        <div className="formGroup">
+          <label htmlFor="quantity">Quantidade:</label>
+          <input
+            type="number"
+            id="quantity"
+            value={quantity}
+            onChange={(ev) => setQuantity(ev.target.value)}
+            required
+          />
+        </div>
+
+        <div className="formGroup">
+          <label htmlFor="price">Preço:</label>
+          <input
+            type="number"
+            id="price"
+            value={price}
+            onChange={(ev) => setPrice(ev.target.value)}
+            required
+          />
+        </div>
+
+        <div className="formGroup">
+          <label htmlFor="category">Categoria:</label>
+          <input
+            type="text"
+            id="category"
+            value={category}
+            onChange={(ev) => setCategory(ev.target.value)}
+            required
+          />
+        </div>
+
+        <div className="formGroup">
+          <label htmlFor="description">Descrição:</label>
+          <textarea
+            id="description"
+            value={description}
+            onChange={(ev) => setDescription(ev.target.value)}
+            required
+          />
+        </div>
+
+        <button type="submit" className="submitButton">
+          Adicionar Item
+        </button>
+      </form>
+    </div>
   );
 }
