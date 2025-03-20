@@ -11,12 +11,12 @@ export default function Header() {
         <div id="navContainer">
           <ul>
             <li>
-              <Link className="linkNav" to={"/"}>
+              <Link className="linkNav" to="/">
                 Inicio
               </Link>
             </li>
             <li>
-              <Link className="linkNav" to={"/items"}>
+              <Link className="linkNav" to="/items">
                 Items
               </Link>
             </li>

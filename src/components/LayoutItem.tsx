@@ -12,7 +12,7 @@ export default function LayoutItem() {
         <div id="navButtonContainer">
           <ul id="buttonItemsContainer">
             <li className="buttonAcctionItem" id="btn1">
-              <Link id="allItemBtn" to="/Items">
+              <Link id="allItemBtn" to="/items">
                 Todos os items
               </Link>
             </li>
